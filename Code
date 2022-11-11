@@ -11,7 +11,7 @@ class Frac():
         self.n2=n2
 
     def addition(self,b):
-        print("the result of the sum is: " + str(n1+b))
+        print("The result of the sum is: " + str(n1+b))
 
     def subtraction(self,b):
         print("The result of the subtraction is: " + str(n1-b))
