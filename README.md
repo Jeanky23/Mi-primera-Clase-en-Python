@@ -1,2 +1,2 @@
 # Mi-primera-Clase-en-Python
-Ejecutar en Visual Studio Code
+Ejecutar codigo en Visual Studio Code
