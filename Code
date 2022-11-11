@@ -1,46 +1,43 @@
-class Fraction():
+from fractions import Fraction
+class Frac():
     ##atributos##
     numerator=0
     denominator=1
     ##fin atributos##
 
     ##metodos##
-    def __init__(self,numerator,denominator):
-        # print("mi primer constructor")
-        self.numerator=numerator
-        self.denominator=denominator
-        
-    def print(self):
-        print(self.numerator,"/",self.
-        denominator)
-
-    def multiply(self,b):
-        result_numerator=self.numerator*b.numerator
-        result_denominator=self.denominator*b.denominator
-        r=Fraction(result_numerator,result_denominator)
-        return r
-
-    def division(self,b):
-        result_numerator=self.numerator/b.numerator
-        result_denominator=self.denominator/b.denominator
-        r=Fraction(result_numerator,result_denominator)
-        return r
+    def __init__(self,n1,n2):
+        self.n1=n1
+        self.n2=n2
 
     def addition(self,b):
-        result_numerator=self.numerator+b.numerator
-        result_denominator=self.denominator+b.denominator
-        r=Fraction(result_numerator,result_denominator)
-        return r
+        print("the result of the sum is: " + str(n1+b))
 
     def subtraction(self,b):
-        result_numerator=self.numerator-b.numerator
-        result_denominator=self.denominator-b.denominator
-        r=Fraction(result_numerator,result_denominator)
-        return r
-    ##fin metodos##
-#f=fraction(4,1)
-a=fraction(2,3)
-a.print()
-b=fraction(3,5)
-b.print()
-r=multiply
+        print("The result of the subtraction is: " + str(n1-b))
+
+    def multiply(self,b):
+        print("The result of the multiplication is: " + str(n1*b))
+
+    def division(self,b):
+        print("The result of the division is: " + str(n1/b))
+    ##fin metodos## 
+n1 = Fraction(input("Enter a fraction, example 1/2: "))
+print(n1)
+
+n2 = Fraction(input("Enter another fraction, example 2/3: "))
+print(n2)
+
+print("Select an operation")
+print("1. Add\n2. Subtract\n3. Multiply\n4. Divide")
+c=int(input("Enter the number of the operation to perform: "))
+if c==1:
+    Frac.addition(n1,n2)
+elif c==2:
+    Frac.subtraction(n1,n2)
+elif c==3:
+    Frac.multiply(n1,n2)
+elif c==4:
+    Frac.division(n1,n2)
+else:
+    print("This operation does not exist.")
